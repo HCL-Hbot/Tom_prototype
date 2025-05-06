@@ -1,0 +1,43 @@
+[project]
+authors = ["example <example@example.com>"]
+name = "custom_pkg"
+channels = ["https://fast.prefix.dev/conda-forge", "https://prefix.dev/robostack-jazzy", "https://clfml.github.io/conda_ros2_jazzy_channel/"]
+platforms = ["linux-64"]
+
+[tasks]
+build = "colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release"
+
+[target.linux-64.tasks]
+vscode = 'env -u LD_LIBRARY_PATH code .'
+
+[tasks.start]
+cmd = "ros2 run custom_pkg custom_node"
+depends-on=["build"]
+
+[dependencies]
+compilers = ">=1.9.0,<2"
+pkg-config = ">=0.29.2,<0.30"
+ninja = ">=1.12.1,<2"
+ros-jazzy-desktop = "*"
+colcon-common-extensions = "*"
+rosdep = "*"
+conda-build = ">=25.1.2,<26"
+rattler-build = "*"
+pyserial = "*"
+scikit-learn = "*"
+ros-jazzy-pcl-ros = "*"
+octomap = "*"
+ros-jazzy-octomap = "*"
+ros-jazzy-backward-ros = "*"
+ros-jazzy-audio-tools = "*"
+ros-jazzy-lowwi = "*"
+libvulkan-headers = "*"
+numactl = "*"
+libvulkan-loader = "*"
+sdl2 = "*"
+[target.linux-64.dependencies]
+python-devtools = "*"         # Optional but useful
+python = "3.12.*"            # This is critical for CMake to find Python
+pybind11 = "*"                # Optional, if you work with bindings
+numpy = "*"
+lttng-ust = "*"

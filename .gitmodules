@@ -1,0 +1,6 @@
+[submodule "SimpleLLama"]
+	path = SimpleLLama
+	url = https://github.com/HCL-Hbot/SimpleLLama.git
+[submodule "SimpleWhisper"]
+	path = SimpleWhisper
+	url = https://github.com/HCL-Hbot/SimpleWhisper.git
