@@ -55,7 +55,7 @@ def generate_launch_description():
             output='screen',
             parameters=[
                 {
-                    'model_path': 'models/ggml-large-v3-turbo-q5_0.bin',
+                    'model_path': 'models/ggml-medium-q5_0.bin',
                     'bot_name': 'LLama',
                     'language': 'nl',
                     'output_topic': '/llm_input',
@@ -70,7 +70,7 @@ def generate_launch_description():
             output='screen',
             parameters=[
                 {
-                    'gguf_model_path': 'models/phi-2.Q5_0.gguf',
+                    'gguf_model_path': 'models/fietje-2b-chat-q5_k_m.gguf',
                     'toggle_topic': '/llm_toggle',
                     'text_output_topic': '/tts_text',
                     'text_input_topic': '/llm_input'
