@@ -1,0 +1,5 @@
+lowwi_node:
+  ros__parameters:
+    wakeword.phrases: [ "Hey Mycroft" ]
+    wakeword.models: [ "models/hey_mycroft.onnx" ]
+    wakeword.min_activations: [ 2 ]

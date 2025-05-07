@@ -4,3 +4,9 @@
 [submodule "SimpleWhisper"]
 	path = SimpleWhisper
 	url = https://github.com/HCL-Hbot/SimpleWhisper.git
+[submodule "tts-node"]
+	path = tts-node
+	url = https://github.com/HCL-Hbot/tts-node.git
+[submodule "SimpleBotLogic"]
+	path = SimpleBotLogic
+	url = https://github.com/HCL-Hbot/SimpleBotLogic.git

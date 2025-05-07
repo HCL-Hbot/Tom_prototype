@@ -34,7 +34,9 @@ ros-jazzy-lowwi = "*"
 libvulkan-headers = "*"
 numactl = "*"
 libvulkan-loader = "*"
-sdl2 = "*"
+ffmpeg = "*"
+sox = "*"
+
 [target.linux-64.dependencies]
 python-devtools = "*"         # Optional but useful
 python = "3.12.*"            # This is critical for CMake to find Python

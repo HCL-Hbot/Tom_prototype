@@ -36,3 +36,5 @@ install/
 log/
 build/
 models/
+__pycache__/
+piper/
