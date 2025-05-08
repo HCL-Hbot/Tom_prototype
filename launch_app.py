@@ -13,7 +13,12 @@ def generate_launch_description():
             package='simplebotlogic',
             executable='simplebotlogic_node',
             name='simplebotlogic_node',
-            output='screen'
+            output='screen',
+            parameters =[
+            {
+               'bot_name': 'Hey Tom'
+            }
+            ]
         ),
         Node(
             package='tts',
@@ -42,12 +47,23 @@ def generate_launch_description():
             output='screen',
             parameters=[
                 {
-                    'wakeword.phrases': [ "Hey Mycroft" ],
-                    'wakeword.models': [ "models/hey_mycroft.onnx" ],
+                    'wakeword.phrases': [ "Hey Tom" ],
+                    'wakeword.models': [ "models/hey_tom.onnx" ],
                     'wakeword.min_activations': [ 2 ]
                 }
             ] 
         ),
+        # Node(
+        #     package='audio_tools',
+        #     executable='audio_playback_node',
+        #     name='audio_playback_node',
+        #     output='screen',
+        #     parameters=[
+        #     {
+        #         'audio_topic': 'whisper/audio_in'
+        #     }
+        #     ]
+        # ),
         Node(
             package='simplewhisper',
             executable='simplewhisper_node',
