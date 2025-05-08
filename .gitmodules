@@ -10,3 +10,6 @@
 [submodule "SimpleBotLogic"]
 	path = SimpleBotLogic
 	url = https://github.com/HCL-Hbot/SimpleBotLogic.git
+[submodule "ROS2_OLDDisplay_Node"]
+	path = ROS2_OLDDisplay_Node
+	url = https://github.com/HCL-Hbot/ROS2_OLDDisplay_Node.git

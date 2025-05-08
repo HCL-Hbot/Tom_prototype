@@ -5,6 +5,17 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='audio_tools',
+            executable='audio_playback_node',
+            name='audio_playback_node',
+            output='screen',
+            parameters=[
+            {
+              'audio_topic': '/tts_samples'
+            }
+            ]
+        ),
+        Node(
+            package='audio_tools',
             executable='audio_capture_node',
             name='audio_capture_node',
             output='screen'
